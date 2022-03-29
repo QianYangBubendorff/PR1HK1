@@ -1,8 +1,8 @@
 package at.campus02.iwi.pictures;
 
 public class Picture {
-    int length=100;
-    int width=200;
+    int length;
+    int width;
 
 
     public int totalPixels(){

@@ -1,12 +1,7 @@
 package at.campus02.iwi.vaccines;
 
 public class VaccinationAppointment {
-    int age;
-    boolean majorIllness;
-    boolean ContactOfPregnantPerson;
-    boolean workingInHealthSector;
-    boolean workingInEducationSector;
-    boolean baseRiskFactor;
+
     public int calculateRiskClass(int age, boolean majorIllness, boolean ContactOfPregnantPerson, boolean workingInHealthSector, boolean workingInEducationSector, boolean baseRiskFactor){
         int sum=0;
 

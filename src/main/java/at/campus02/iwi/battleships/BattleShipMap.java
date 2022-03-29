@@ -79,7 +79,6 @@ public class BattleShipMap {
 
         return shipCountArr;
     }
-
     // returns the average ship strength of player A ships (positive numbers)
     public double averageShipStrengthPlayerA() {
         double averageShipPower = 0;
@@ -92,7 +91,6 @@ public class BattleShipMap {
                     totalPower = totalPower + map[i][j];
                 }
             }
-
         }
         averageShipPower = totalPower / shipCount;
         return averageShipPower;
