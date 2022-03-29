@@ -6,7 +6,8 @@ public class PictureApp {
         picture1.length = 640;
         picture1.width = 480;
         picture1.totalPixels();
-        System.out.println( picture1.totalSize(20));
+        int totalsize= picture1.totalSize(20);
+        System.out.println( totalsize);
         System.out.println(picture1.totalPixels());
     }
 }

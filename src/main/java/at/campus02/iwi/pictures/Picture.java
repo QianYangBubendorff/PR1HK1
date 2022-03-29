@@ -1,8 +1,8 @@
 package at.campus02.iwi.pictures;
 
 public class Picture {
-    int length;
-    int width;
+    public int length;
+    public int width;
 
 
     public int totalPixels(){
@@ -14,8 +14,9 @@ public class Picture {
         totalSize= bytePerPixel*totalPixels();
         return totalSize;
     }
-    public void Scale(double factor){
+    public void scale(double factor){
         length= (int) (factor*length);
          width= (int) (factor* width);
+//         width*=factor;
     }
 }

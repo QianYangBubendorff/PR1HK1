@@ -55,8 +55,6 @@ public class BattleShipMap {
                     shipCount++;
                 }
             }
-
-
         }
         return shipCount;
     }
@@ -64,17 +62,15 @@ public class BattleShipMap {
     // returns a one-dim-array with count in every line
     public int[] countOfShipsPerLine() {
         int[] shipCountArr = new int[map.length];
-        int shipCount = 0;
-        int k = 0;
+
         for (int i = 0; i < map.length; i++) {
+            int shipCount = 0;
             for (int j = 0; j < map[i].length; j++) {
-                if (map[i][j] > 0 || map[i][j] < 0) {
+                if (map[i][j] !=0) {
                     shipCount++;
                 }
             }
-            shipCountArr[k] = shipCount;
-            k++;
-            shipCount = 0;
+            shipCountArr[i] = shipCount;
         }
 
         return shipCountArr;
