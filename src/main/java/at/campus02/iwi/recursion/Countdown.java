@@ -11,5 +11,6 @@ public class Countdown {
         if (start >= stop) {
             countDown(start, stop);
         }
+        System.out.println("ende");
     }
 }
