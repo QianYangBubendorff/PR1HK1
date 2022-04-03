@@ -38,11 +38,9 @@ public class Grundsteuer {
 
     public double[][] grundsteuerZuordnen(int[][] array, int[] kundenList, double[] steuerList){
         double[][] resultArr = new double[kundenList.length][2];
-        int k=0;
-        for(int i=0; i<kundenList.length; i++) {
-                k=kundenList[i];
-                resultArr[k][0]=k;
-                resultArr[k][1]=resultArr[k][1] + steuerList[(array[i][0] - 1)] * array[i][1] * array[i][2];
+        for(int i=0; i<array.length; i++) {
+                resultArr[i][0]=i;
+                resultArr[i][1]=resultArr[i][1] + steuerList[(array[i][0] - 1)] * array[i][1] * array[i][2];
             }return resultArr;
         }
 
