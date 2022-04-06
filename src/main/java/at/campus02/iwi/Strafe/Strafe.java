@@ -12,15 +12,15 @@ public class Strafe {
 //der Vergehen.
     public void strafe(int geschwindigkeitsueberschreitung){
         if(geschwindigkeitsueberschreitung<=20 &&geschwindigkeitsueberschreitung>0){
-            strafe=30;
+            strafe=30; anzahl+=anzahl;
         }if(geschwindigkeitsueberschreitung<=30 &&geschwindigkeitsueberschreitung>20){
-            strafe=50;
+            strafe=50; anzahl+=anzahl;
         }if(geschwindigkeitsueberschreitung<=50 &&geschwindigkeitsueberschreitung>30){
-            strafe=100;
+            strafe=100; anzahl+=anzahl;
         }if(geschwindigkeitsueberschreitung<=100 &&geschwindigkeitsueberschreitung>50){
-            strafe=500;
+            strafe=500; anzahl+=anzahl;
         }if(geschwindigkeitsueberschreitung>100){
-            strafe=1500;
+            strafe=1500; anzahl+=anzahl;
         }
 
     }
